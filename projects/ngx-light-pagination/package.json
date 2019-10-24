@@ -1,6 +1,6 @@
 {
   "name": "ngx-light-pagination",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "scripts": {
     "build": "ng build ngx-light-pagination",
     "test": "ng test ngx-light-pagination",

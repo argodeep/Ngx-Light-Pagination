@@ -52,7 +52,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-lib-demo",
+            "outputPath": "docs",
             "index": "projects/my-lib-demo/src/index.html",
             "main": "projects/my-lib-demo/src/main.ts",
             "polyfills": "projects/my-lib-demo/src/polyfills.ts",
@@ -82,7 +82,7 @@
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
-              "vendorChunk": false,
+              "vendorChunk": true,
               "buildOptimizer": true,
               "budgets": [
                 {
