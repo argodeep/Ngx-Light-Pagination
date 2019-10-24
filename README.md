@@ -12,7 +12,7 @@ This is a light weight pagination library built for angular 2+ versions. Less th
 - Neat & Clean UI.
 - 5 points pagination.
 - **Fast loading**.
-- Intellegent multi color sensing.
+- Intelligent multi color sensing.
 - **Dark & Light color theme** supported.
 - Custom Style Support will be added soon [Coming Soon]
 - 2 More design will be added soon [Coming Soon]
