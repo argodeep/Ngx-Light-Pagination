@@ -1,0 +1,28 @@
+<div style="display: flex; justify-content: center">
+        <img src="assets/icon.png" height="128px">
+</div>
+<h3>Ngx Light Pagination Demo</h3>
+<h5><span style="background-color: yellow">Less than 15 kb, No Dependencies</span></h5>
+<p>Total Item: <input type="number" min="1" [(ngModel)]="paginationMeta.totalItem" (input)="logicHandler()"></p>
+<p>Per Page Item: <input type="number" min="1" [max]="paginationMeta.totalItem" [(ngModel)]="paginationMeta.perPageItem"
+                (input)="logicHandler()"></p>
+<p>Total Page: {{paginationMeta.totalPage == 'Infinity' ? 'N/A' : paginationMeta.totalPage}}</p>
+<p>Current Page: {{paginationMeta.currentPage == 'Infinity' ? 'N/A' : paginationMeta.currentPage}}</p>
+<ngx-light-pagination [color]="themeColor" [paginationData]="paginationMeta" (onPageChange)="paginationEvents($event)"></ngx-light-pagination>
+<p>Pagination Event Type: <span>{{paginationEvent.type? paginationEvent.type : 'N/A'}}</span></p>
+<p>Pagination Event Data: <span>{{paginationEvent.data? paginationEvent.data : 'N/A'}}</span></p>
+<br>
+<p>Theme Color: <input type="text" placeholder="use #AA00FF format" [(ngModel)]="themeColor" maxlength="7"></p>
+<p><a href="https://www.color-hex.com/" target="_blank">Choose Color From Here</a></p>
+<br>
+<P><a style="background-color: lightblue; padding: 4px; text-decoration: none" href="https://www.npmjs.com/package/ngx-light-pagination/" target="_blank">See installation guide </a></P>
+<P><a style="background-color: lightyellow; padding: 4px; text-decoration: none" href="https://github.com/argodeep/Ngx-Light-Pagination/issues/new?assignees=argodeep&labels=documentation%2C+enhancement&template=feature_request.md&title=" target="_blank">Request feature here</a></P>
+<P><a style="background-color: lightgray; padding: 4px; text-decoration: none" href="https://github.com/argodeep/Ngx-Light-Pagination/issues/new?assignees=argodeep&labels=bug&template=bug_report.md&title=" target="_blank">Report bugs/issues here</a></P>
+<div style="margin: 15px 0px 0px; font-family: 'Courier New', Courier, monospace;">
+        <p>Icons made by
+                <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons" style="margin: 0 4px">
+                        Roundicons </a>
+                from
+                <a href="https://www.flaticon.com/" title="Flaticon" style="margin: 0 4px"> www.flaticon.com</a>
+        </p>
+</div>

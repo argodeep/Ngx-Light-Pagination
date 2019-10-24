@@ -1,0 +1,119 @@
+.wrapper-pagination {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+// .dropdown-block {
+// 	font-family: 'Montserrat', sans-serif;
+// 	font-weight: 500;
+// 	font-size: 14px;
+// 	color: #260f4a;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	flex-direction: row;
+// 	cursor: pointer;
+// }
+
+.block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 4px;
+	margin: 4px;
+	border-radius: 4px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	// color: #260f4a;
+	box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .125) !important;
+	cursor: pointer;
+}
+
+.block:hover {
+	box-shadow: 0 .125rem .425rem rgba(0, 0, 0, .175) !important;
+}
+
+// .dropdown-text {
+// 	margin-right: 8px;
+// 	margin-left: 5px;
+// 	font-weight: 300;
+// 	font-size: 14px;
+// }
+
+.perPage {
+	height: auto;
+	padding: 8px 36px 8px 8px;
+	background-color: #ffffff;
+	font-size: 14px;
+}
+
+.perPage:hover {
+	background-color: #f5f3f3;
+}
+
+.perPageActive {
+	background-color: #f9f9f9;
+}
+
+// .dropdown-list {
+// 	display: block;
+// 	opacity: 0;
+// 	height: 0;
+// 	position: absolute;
+// 	z-index: 99999;
+// 	border-radius: 4px;
+// 	box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .125) !important;
+// }
+
+// .dropdown-list-show {
+// 	display: block;
+// 	opacity: 1;
+// 	height: auto;
+// 	transition: opacity 0.5s ease-in-out;
+// 	position: absolute;
+// 	z-index: 99999;
+// 	border-radius: 4px;
+// 	box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .125) !important;
+// }
+
+// .first-index {
+// 	margin-top: 62px;
+// }
+
+// .second-index {
+// 	margin-top: 46px;
+// }
+
+// .third-index {
+// 	margin-top: 29px;
+// }
+
+// .list {
+// 	display: none;
+// }
+
+// .list-show {
+// 	display: block;
+// 	list-style-type: none;
+// 	padding: 0px;
+// 	z-index: 99999;
+// 	margin: 0px;
+// 	background-color: #fff;
+// }
+
+// @media screen and (max-width: 767px) {
+// 	.dropdown-block {
+// 		display: none;
+// 	}
+// }
+
+// @media screen and (min-width: 768px) {
+// 	.dropdown-block {
+// 		display: flex;
+// 	}
+// }

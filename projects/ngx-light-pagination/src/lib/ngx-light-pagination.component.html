@@ -1,0 +1,37 @@
+<div class="wrapper-pagination" *ngIf="paginatedPages.length > 0 && paginationData.perPageItem">
+    <!-- Dropdown Block -->
+    <!-- <div class="dropdown-block" *ngIf="perPageOption.length > 0">
+        <span class="block" [ngStyle]="{'color': color }" style="height: 24px; flex-direction: row" (click)='showDropDown()'
+            (clickOutside)='hideDropdown()'>
+            <span class="dropdown-text">{{paginationData.perPageItem}} / page</span>
+            <span>
+                <down-arrow [color]="color && (color.length === 4 || color.length === 7) ? color : '#000'"></down-arrow>
+            </span>
+        </span>
+        <div class="dropdown-list"
+            [ngClass]="{'first-index': perPageOption.length === 1, 'second-index': perPageOption.length === 2, 'third-index': perPageOption.length === 3}">
+            <ul class="list">
+                <li *ngFor="let item of perPageOption" (click)="hideDropdown(); perPageChange(item)" class="perPage"
+                    [ngClass]="{'perPageActive': item === paginationData.perPageItem}">{{item}} / page</li>
+            </ul>
+        </div>
+    </div> -->
+    <!-- Pagination Block -->
+    <div class="block"
+        [ngStyle]="{'background-color': invertColorString, 'color': color && (color.length === 4 || color.length === 7) ? color : '#000', 'opacity': paginationData.currentPage !== 1 ? 1 : 0.3 }"
+        (click)="previous()">
+        <left-arrow [color]="color && (color.length === 4 || color.length === 7) ? color : '#000'"></left-arrow>
+    </div>
+    <div *ngFor="let page of paginatedPages; let i = index">
+        <div class="block" (click)="changePage(page)"
+            [ngStyle]="{'background-color': page === paginationData.currentPage ? (color && (color.length === 4 || color.length === 7) ? color : '#000') : invertColorString, 'color': page === paginationData.currentPage ? invertColorString : (color && (color.length === 4 || color.length === 7) ? color : '#000')  }"
+            style="width: 24px; height: 24px">
+            {{page}}
+        </div>
+    </div>
+    <div class="block"
+        [ngStyle]="{'background-color': invertColorString, 'color': color && (color.length === 4 || color.length === 7) ? color : '#000', 'opacity': paginationData.currentPage !== paginationData.totalPage ? 1 : 0.3 }"
+        (click)="next()">
+        <right-arrow [color]="color && (color.length === 4 || color.length === 7) ? color : '#000'"></right-arrow>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+{
+  "name": "ngx-light-pagination",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "ng build ngx-light-pagination",
+    "test": "ng test ngx-light-pagination",
+    "publish": "npm publish"
+  },
+  "peerDependencies": {
+    "@angular/common": "^8.2.11",
+    "@angular/core": "^8.2.11"
+  }
+}
