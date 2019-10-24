@@ -1,6 +1,25 @@
 {
   "name": "ngx-light-pagination",
-  "version": "1.0.4",
+  "version": "1.0.5",
+  "author": "Arghyadeep Majumder",
+  "description": "This is a light weight pagination library built for angular 2+ versions. Less than 15 kb, No Dependencies.",
+  "homepage": "https://github.com/argodeep/Ngx-Light-Pagination",
+  "license": "MIT",
+  "keywords": [
+    "Angular 8",
+    "Angular Pagination",
+    "Angular Light",
+    "Pagination Library",
+    "Angular",
+    "Light Pagination",
+    "Angular 2+",
+    "Angular Libarary",
+    "Theme Pagination"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/argodeep/Ngx-Light-Pagination.git"
+  },
   "scripts": {
     "build": "ng build ngx-light-pagination",
     "test": "ng test ngx-light-pagination",
