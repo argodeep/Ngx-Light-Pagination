@@ -17,10 +17,11 @@
         </div>
     </div> -->
     <!-- Pagination Block -->
-    <div class="block"
+    <div class="block" style="padding: 0px !important;"
         [ngStyle]="{'background-color': invertColorString, 'color': color && (color.length === 4 || color.length === 7) ? color : '#000', 'opacity': paginationData.currentPage !== 1 ? 1 : 0.3 }"
         (click)="previous()">
-        <left-arrow [color]="color && (color.length === 4 || color.length === 7) ? color : '#000'"></left-arrow>
+        <left-arrow style="display: flex; align-items: center; justify-content: center;"
+            [color]="color && (color.length === 4 || color.length === 7) ? color : '#000'"></left-arrow>
     </div>
     <div *ngFor="let page of paginatedPages; let i = index">
         <div class="block" (click)="changePage(page)"
@@ -29,9 +30,10 @@
             {{page}}
         </div>
     </div>
-    <div class="block"
+    <div class="block" style="padding: 0px !important;"
         [ngStyle]="{'background-color': invertColorString, 'color': color && (color.length === 4 || color.length === 7) ? color : '#000', 'opacity': paginationData.currentPage !== paginationData.totalPage ? 1 : 0.3 }"
         (click)="next()">
-        <right-arrow [color]="color && (color.length === 4 || color.length === 7) ? color : '#000'"></right-arrow>
+        <right-arrow style="display: flex; align-items: center; justify-content: center;"
+            [color]="color && (color.length === 4 || color.length === 7) ? color : '#000'"></right-arrow>
     </div>
 </div>
