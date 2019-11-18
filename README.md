@@ -1,6 +1,6 @@
 # Ngx Light Pagination - by Arghyadeep 
 
-&middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/argodeep/Ngx-Light-Pagination/blob/master/LICENSE) [![npm version](https://img.shields.io/badge/npm-v1.0.6-blue)](https://www.npmjs.com/package/ngx-light-pagination)
+&middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/argodeep/Ngx-Light-Pagination/blob/master/LICENSE) [![npm version](https://img.shields.io/badge/npm-v1.0.7-blue)](https://www.npmjs.com/package/ngx-light-pagination)
 
 This is a light weight pagination library built for angular 2+ versions. Less than 15 kb, No Dependencies. This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.11. Most likely it will work with angular 5, 6, 7, 8. Please [open an issue](https://github.com/argodeep/Ngx-Light-Pagination/issues/new/choose) if you face any bug.
 

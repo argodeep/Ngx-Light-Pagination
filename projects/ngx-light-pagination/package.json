@@ -1,6 +1,6 @@
 {
   "name": "ngx-light-pagination",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "Arghyadeep Majumder",
   "description": "This is a light weight pagination library built for angular 2+ versions. Less than 15 kb, No Dependencies.",
   "homepage": "https://github.com/argodeep/Ngx-Light-Pagination",
