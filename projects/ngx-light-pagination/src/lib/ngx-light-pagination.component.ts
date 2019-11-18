@@ -46,7 +46,7 @@ export class NgxLightPaginationComponent implements OnInit {
   }
 
   setPagination(paginationData): void {
-    paginationData.paginationLength = 5;
+    paginationData.paginationLength = Math.ceil(paginationData.totalItem / paginationData.perPageItem) > 5 ? 5 : Math.ceil(paginationData.totalItem / paginationData.perPageItem);
     const pages = [paginationData.currentPage];
     const pointer = Math.floor(paginationData.paginationLength / 2);
     const totalPage = paginationData.totalPage === Math.ceil(paginationData.totalItem / paginationData.perPageItem) ? paginationData.totalPage : Math.ceil(paginationData.totalItem / paginationData.perPageItem);
